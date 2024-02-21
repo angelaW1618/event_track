@@ -68,7 +68,6 @@ export async function POST(req: Request) {
 
     const newUser = await createUser(user);
 
-    // DB connection to clerk
     if(newUser) {
       await clerkClient.users.updateUserMetadata(id, {
         publicMetadata: {

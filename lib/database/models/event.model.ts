@@ -1,7 +1,5 @@
 import { Document, Schema, model, models } from "mongoose";
 
-// Allows frontend to know exactly which properties each document has
-
 export interface IEvent extends Document {
   _id: string;
   title: string;

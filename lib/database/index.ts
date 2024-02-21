@@ -10,7 +10,7 @@ export const connectToDatabase = async () => {
   if(!MONGODB_URI) throw new Error('MONGODB_URI is missing');
 
   cached.promise = cached.promise || mongoose.connect(MONGODB_URI, {
-    dbName: 'event track',
+    dbName: 'events',
     bufferCommands: false,
   })
 
@@ -18,6 +18,3 @@ export const connectToDatabase = async () => {
 
   return cached.conn;
 }
-
-// Server actions will call DB multiple times, connectToDatabase() many times, if not caching it, new connection to DB will be made
-// So by caching the connection or the promise of the connection, connection can be reused if it's still open
