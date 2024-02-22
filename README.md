@@ -28,6 +28,7 @@ A comprehensive event management platform with a strong emphasis on user experie
 - TypeScript
 - TailwindCSS
 - Stripe
+- Clerk
 - Zod
 - React Hook Form
 - Shadcn
