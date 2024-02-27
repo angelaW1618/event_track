@@ -5,6 +5,7 @@
 A comprehensive event management platform with a strong emphasis on user experience, security, and functionality.
 
 > **Note:** Make sure to select or create a new category when creating a new event.
+> When checking out please provide the email that matches your account email.
 
 ## <a name="table">Table of Contents</a>
 
